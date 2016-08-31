@@ -213,6 +213,9 @@ module.exports = class MdsWindow
 
       @menu.states.viewMode = mode
       @menu.updateMenu()
+    
+    slideshowMode: () ->
+      console.log('Entering slideshow mode')
 
     themeChanged: (theme) ->
       @menu.states.theme = theme

@@ -148,6 +148,8 @@ do ->
   # View modes
   $('.viewmode-btn[data-viewmode]').click -> MdsRenderer.sendToMain('viewMode', $(this).attr('data-viewmode'))
 
+  $('#play-slideshow-button').click -> MdsRenderer.sendToMain('slideshowMode')
+
   # File D&D
   $(document)
     .on 'dragover',  -> false
